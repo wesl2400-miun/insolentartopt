@@ -1,0 +1,23 @@
+/* Gör 'hero' bilden till en responsiv, genomskinlig bakgrundsbild */
+.header {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header img {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.6;
+}
+

@@ -1,0 +1,15 @@
+/* Stilisera porträttbilden */
+
+.portrait {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portrait img {
+  height: 300px;
+  box-shadow: 4px 4px 4px 4px black;
+  background-color: var(--deep-dark);
+}
+
+

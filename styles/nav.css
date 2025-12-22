@@ -1,0 +1,53 @@
+/* Sätter stil på navigeringsmenyn - gör den responsiv och alltid synlig */
+
+.nav {
+  left: 0;
+  right: 0;
+  top: 0px;
+  position: fixed;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+/* Avser ruttlistan i navigeringsmenyn */
+
+.nav ul {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--deep-dark);
+  box-shadow: 2px 2px 2px black;
+}
+
+/* Ändra stilen för länkar beroende på deras aktuella tillstånd */
+
+.nav ul a, a:link {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--light-gray);
+}
+
+.nav ul a:hover, .selected:hover {
+  background-color: var(--dark);
+}
+
+.nav ul .selected {
+  background-color: var(--purple);
+}
+
+.nav ul a:active {
+  color: pink;
+}
+
+/** Gör teckenstorleken mindre på mindre skärmar - avser mobiler **/
+
+@media screen and (max-width: 500px) {
+  .nav {
+    font-size: 1.1rem;
+  }
+}

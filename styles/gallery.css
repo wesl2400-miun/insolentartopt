@@ -1,0 +1,51 @@
+/* Sätter stil på bildgalerian under Bildredigering sidan. */
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.gallery img {
+  height: 350px;
+  box-shadow: 4px 4px 4px 4px black;
+}
+
+/* Anpassar bilder i bildgallerian efter varje skärm
+* Egentligen hade detta inte behövts om layouten som en kolumn
+* Men jag vill att bilderna ändå ska visas vid sidan om varandra
+* för snabb referens, även på mobiler
+*/
+
+@media screen and (max-width: 1330px) {
+  .gallery img {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .gallery img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .gallery img {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .gallery img {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .gallery img {
+    height: 100px;
+  }
+}
+

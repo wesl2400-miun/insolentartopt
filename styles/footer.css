@@ -1,0 +1,14 @@
+/** Stilen för sidfoten - är responsiv och alltid synlig**/
+.footer {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--light-gray);
+  box-sizing: border-box;
+  background-color: var(--deep-dark);
+}
