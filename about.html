@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+     <!-- SEO Optimering -->
+    <meta name="description" content="Om mig - Grafisk teknik | Insolent Art">
     <title>Om mig | Insolent Art</title>
 
     <!-- Hämta favicon -->
@@ -33,13 +36,49 @@
         <img src="./assets/logo.svg" alt="Insolent Art Logotyp">
       </div>
       <div class="header">
-        <img src="./assets/header.png" alt="En svartvit båt vilar på havet, medan bakgrunden visar en stadsvy med havet färgat i lila och rött, i en abstrakt, konstnärlig stil.">
+        <picture>
+          <!-- Desktop -->
+          <source
+            srcset="./assets/header_1600w.webp"
+            media="(min-width: 800px)"
+            type="image/webp">
+
+          <source
+            srcset="./assets/header_1600w.jpg"
+            media="(min-width: 800px)"
+            type="image/jpeg">
+
+          <!-- Surfplatta -->
+          <source
+            srcset="./assets/header_800w.webp"
+            media="(min-width: 500px)"
+            type="image/webp">
+
+          <source
+            srcset="./assets/header_800w.jpg"
+            media="(min-width: 500px)"
+            type="image/jpeg">
+
+          <!-- Mobil -->
+          <source
+            srcset="./assets/header_500w.webp"
+            type="image/webp">
+
+          <img src="./assets/header_500w.jpg" alt="En svartvit båt vilar på havet, medan bakgrunden visar en stadsvy med havet färgat i lila och rött, i en abstrakt, konstnärlig stil.">
+        </picture>
       </div>
     </header>
     <!-- Definiera huvudinnehållet -->
     <main class="main">
       <div class="portrait">
-        <img src="./assets/portrait.png" alt="En ">
+        <picture>
+          <!-- Universell WebP version med två upplösningsalternativ -->
+          <source
+            srcset="./assets/portrait_225w.webp 1x, ./assets/portrait_600h.webp 2x"
+            type="image/webp">
+
+          <img src="./assets/portrait_225w.png" alt="En ljusgrå silhuett av en person med ett frågetecken i mitten.">
+        </picture>
       </div>
       <div>
         <h1>Om mig</h1>
@@ -48,7 +87,7 @@
     </main>
     <!-- Definiera sidfoten -->
     <footer class="footer">
-      <h4>wesl2400@student.miun.se 2025</h4>
+      <h2>wesl2400@student.miun.se 2025</h2>
     </footer>
   </body>
 </html>
