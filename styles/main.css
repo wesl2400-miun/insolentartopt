@@ -22,6 +22,10 @@
 
 /* Stilisera huvudinnehållets rubriker och paragrafer */
 
+.main h1 {
+  font-size: 1.7rem;
+}
+
 .main h1, h2, p {
   color: var(--light-gray);
   text-align: center;
